@@ -1,0 +1,21 @@
+<div class="col-lg-8 col-12 mt-3 mx-auto" th:fragment="listItem" th:each="item : ${items}">
+  <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+    <div class="d-flex">
+      <!--<img th:src="@{images/topics/undraw_Remote_design_team_re_urdx.png}" class="custom-block-image img-fluid" alt="" > -->
+      <iframe th:src="@{https://maps.google.com/maps?q={lat},{lon}&hl=es&z=14&amp;output=embed(lat=${item.latitude},lon=${item.longitude})}" width="50%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <div class="custom-block-topics-listing-info d-flex">
+        <div>
+          <h5 class="mb-2" th:text="${item.name}">Web Design</h5>
+
+          <p class="mb-0" th:text="${item.observation}">Topic Listing includes home, listing, detail and contact pages. Feel free to modify this template for your custom websites.</p>
+
+          <a th:href="@{topics-detail}" class="btn custom-btn mt-3 mt-lg-4">Detalhes</a>
+        </div>
+
+        <!--<span class="badge bg-design rounded-pill ms-auto">14</span> -->
+      </div>
+    </div>
+  </div>
+
+</div>

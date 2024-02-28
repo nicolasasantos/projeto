@@ -1,0 +1,63 @@
+<footer class="site-footer section-padding" th:fragment="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-12 mb-4 pb-2">
+                <a class="navbar-brand mb-2" th:href="@{/index.html}">
+                    <i class="bi-back"></i>
+                    <span th:text="${grupo}"></span>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h6 class="site-footer-title mb-3">Menu</h6>
+
+                <ul class="site-footer-links">
+                    <li class="site-footer-link-item">
+                        <a href="index.html#section_1" class="site-footer-link">Início</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a th:href="@{report-problem}" class="site-footer-link">Reportar Problema</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="index.html#section_3" class="site-footer-link">Como reportar</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="index.html#section_4" class="site-footer-link">Perguntas Frequentes</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="index.html#section_5" class="site-footer-link">Prefeitura</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a th:href="@{topics-listing}" class="site-footer-link">Lista de relatos</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                <h6 class="site-footer-title mb-3">Membros</h6>
+
+                <p class="text-white d-flex mb-1">
+                    <a class="site-footer-link">
+                        <br><br>Alessandro Onofre<br>Fabio Moraes<br>Gustavo Henrique<br>Marcos Roberto<br>
+                        Mateus Gomes<br>Matheus Roberto<br>Nicolas Alvares<br>Rodolfo Guilherme
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+
+                <p class="copyright-text mt-lg-5 mt-4">DRP09-Projeto Integrador em Computação I-Turma 001.</p>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
