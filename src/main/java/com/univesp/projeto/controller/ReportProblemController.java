@@ -57,14 +57,12 @@ public class ReportProblemController {
 
             FileUploadUtil.saveFile(UPLOAD_DIRECTORY,maxId.toString()+".HEIC",file);
             javaxt.io.Image image = new javaxt.io.Image(UPLOAD_DIRECTORY+"/"+maxId.toString()+".HEIC");
-            System.out.println(UPLOAD_DIRECTORY+"/"+maxId.toString()+".HEIC");
             double[] gps = image.getGPSCoordinate();
-            System.out.println(gps);
 
             hole.setFoto(maxId);
             hole.setDate(timeStamp);
-            hole.setLatitude(Double.toString(gps[0]));
-            hole.setLongitude(Double.toString(gps[1]));
+            hole.setLatitude(Double.toString(gps[1]));
+            hole.setLongitude(Double.toString(gps[0]));
 
         }else{
             hole.setFoto(999);
