@@ -1,9 +1,5 @@
 package com.univesp.projeto.model;
 
-import io.micrometer.observation.Observation;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
 import java.util.Date;
 
 public class Hole {
@@ -12,7 +8,7 @@ public class Hole {
     private Date date;
     private String latitude;
     private String longitude;
-    private String Observation;
+    private String observation;
     private boolean Fixed;
     private long Foto;
 
@@ -22,9 +18,13 @@ public class Hole {
         this.date = date;
         this.latitude = latitude;
         this.longitude = longitude;
-        Observation = observation;
+        this.observation = observation;
         Fixed = fixed;
         Foto = foto;
+    }
+
+    public Hole() {
+
     }
 
     public long getId() {
@@ -68,11 +68,11 @@ public class Hole {
     }
 
     public String getObservation() {
-        return Observation;
+        return observation;
     }
 
     public void setObservation(String observation) {
-        Observation = observation;
+        this.observation = observation;
     }
 
     public boolean isFixed() {
@@ -99,7 +99,7 @@ public class Hole {
                 ", date=" + date +
                 ", latitude='" + latitude + '\'' +
                 ", longitude='" + longitude + '\'' +
-                ", Observation='" + Observation + '\'' +
+                ", observation='" + observation + '\'' +
                 ", Fixed=" + Fixed +
                 ", Foto=" + Foto +
                 '}';
