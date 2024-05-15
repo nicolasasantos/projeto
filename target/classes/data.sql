@@ -1,2 +1,2 @@
-insert into hole (name,date,latitude,longitude,foto_id) values ('Nicolas A.',now(),'-22.038862679870743','-47.8755553581377',1);
+insert into hole (name,date,latitude,longitude,foto_id) values ('Nicolas A.',now(),'-22.016973','-47.897224',1);
 commit;
