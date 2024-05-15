@@ -17,9 +17,6 @@ public class TopicListingController {
 
     @GetMapping({"/topics-listing","/topics-listing.html"})
     public String showTopicListing(ModelMap model){
-        Date date = new Date();
-        Hole teste = new Hole(2,"tes",date,"-20.45","-24.15","Nada",false,1);
-        db.addHole(teste);
         List<Hole> items = db.getHoles();
 
         System.out.println(items);

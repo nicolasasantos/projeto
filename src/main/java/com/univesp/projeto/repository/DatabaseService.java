@@ -38,4 +38,10 @@ public class DatabaseService {
         template.update(query,hole.getName(),hole.getDate(),hole.getLatitude(),hole.getLongitude(),hole.getObservation(),hole.isFixed(),hole.getFoto());
     }
 
+    public Long getMaxId(){
+        Long maxId = null;
+        String query = "SELECT MAX(ID) FROM HOLE";
+        return template.queryForObject(query,Long.class);
+    }
+
 }
