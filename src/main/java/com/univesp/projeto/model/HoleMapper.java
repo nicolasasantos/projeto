@@ -17,6 +17,6 @@ public class HoleMapper implements RowMapper<Hole> {
                 rs.getString("longitude"),
                 rs.getString("obs"),
                 rs.getBoolean("fixed"),
-                rs.getLong("foto_id"));
+                rs.getString("foto_id"));
     }
 }
