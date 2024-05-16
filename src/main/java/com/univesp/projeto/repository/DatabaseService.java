@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import javax.sql.DataSource;
 import java.util.List;
 
 @Repository
@@ -35,7 +34,7 @@ public class DatabaseService {
 
     public void addHole(Hole hole){
         String query = "INSERT INTO HOLE (NAME,DATE,LATITUDE,LONGITUDE,OBS,FIXED,FOTO_ID) VALUES (?,?,?,?,?,?,?)";
-        template.update(query,hole.getName(),hole.getDate(),hole.getLatitude(),hole.getLongitude(),hole.getObservation(),hole.isFixed(),hole.getFoto());
+        template.update(query,hole.getName(),hole.getDate(),hole.getLatitude(),hole.getLongitude(),hole.getObservation(),hole.isFixed(),hole.getFotoId());
     }
 
     public Long getMaxId(){

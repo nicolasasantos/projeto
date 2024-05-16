@@ -10,9 +10,9 @@ public class Hole {
     private String longitude;
     private String observation;
     private boolean Fixed;
-    private long Foto;
+    private String fotoId;
 
-    public Hole(long id, String name, Date date, String latitude, String longitude, String observation, boolean fixed, long foto) {
+    public Hole(long id, String name, Date date, String latitude, String longitude, String observation, boolean fixed, String fotoId) {
         this.id = id;
         this.name = name;
         this.date = date;
@@ -20,7 +20,7 @@ public class Hole {
         this.longitude = longitude;
         this.observation = observation;
         Fixed = fixed;
-        Foto = foto;
+        this.fotoId = fotoId;
     }
 
     public Hole() {
@@ -83,12 +83,12 @@ public class Hole {
         Fixed = fixed;
     }
 
-    public long getFoto() {
-        return Foto;
+    public String getFotoId() {
+        return fotoId;
     }
 
-    public void setFoto(long foto) {
-        Foto = foto;
+    public void setFotoId(String fotoId) {
+        this.fotoId = fotoId;
     }
 
     @Override
@@ -101,7 +101,7 @@ public class Hole {
                 ", longitude='" + longitude + '\'' +
                 ", observation='" + observation + '\'' +
                 ", Fixed=" + Fixed +
-                ", Foto=" + Foto +
+                ", Foto=" + fotoId +
                 '}';
     }
 }

@@ -9,5 +9,5 @@ create table hole
     longitude varchar(40) not null check (longitude <> ''),
     obs varchar(200) check (obs <> ''),
     fixed bool default false,
-    foto_id int
+    foto_id varchar(90) not null check (foto_id <> '')
 );
