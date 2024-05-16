@@ -16,32 +16,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-lg-4 me-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="index.html#section_1">Início</a>
+                    <a class="nav-link click-scroll" th:href="@{/index.html#section_1}">Início</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" th:href="@{report-problem}">Reportar Problema</a>
+                    <a class="nav-link active" th:href="@{/report-problem}">Reportar Problema</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="index.html#section_2">Como Reportar</a>
+                    <a class="nav-link click-scroll" th:href="@{/index.html#section_2}">Como Reportar</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="index.html#section_3">Perguntas Frequentes</a>
+                    <a class="nav-link click-scroll" th:href="@{/index.html#section_3}">Perguntas Frequentes</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="index.html#section_4">Prefeitura</a>
+                    <a class="nav-link click-scroll" th:href="@{/index.html#section_4}">Prefeitura</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outros</a>
 
                     <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                         <li><a class="dropdown-item" th:href="@{topics-listing}">Lista de relatos</a></li>
 
-                        <li><a class="dropdown-item active" href="contact.html">Contact Form</a></li>
+                        <li><a class="dropdown-item active" href="contact.html">Formulário de contato</a></li>
                     </ul>
                 </li>
             </ul>

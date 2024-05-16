@@ -10,7 +10,8 @@
 
           <p class="mb-0" th:text="${item.observation}">Topic Listing includes home, listing, detail and contact pages. Feel free to modify this template for your custom websites.</p>
 
-          <a th:href="@{topics-detail}" class="btn custom-btn mt-3 mt-lg-4">Detalhes</a>
+          <a th:href="@{topics-detail/{id}(id=${item.id})}" class="btn custom-btn mt-3 mt-lg-4">Detalhes</a>
+
         </div>
 
         <!--<span class="badge bg-design rounded-pill ms-auto">14</span> -->
